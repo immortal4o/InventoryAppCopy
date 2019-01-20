@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_list"
+    android:paddingBottom="@dimen/empty_view_padding">
+
+    <TextView
+        android:id="@+id/list_book_name"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/empty_view_padding"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_medium"
+        app:layout_constraintEnd_toStartOf="@+id/list_sell"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lord of the ring" />
+
+    <TextView
+        android:id="@+id/list_book_quantity"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/empty_view_padding"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toStartOf="@+id/list_sell"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/list_book_name"
+        tools:text="Quantity: 99" />
+
+    <TextView
+        android:id="@+id/list_book_price"
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/empty_view_padding"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_book_name"
+        tools:text="Price: 99$" />
+
+    <ImageView
+        android:id="@+id/list_sell"
+        android:layout_width="@dimen/big_image"
+        android:layout_height="@dimen/big_image"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/empty_view_padding"
+        android:src="@drawable/notebook_minus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.45" />
+
+</android.support.constraint.ConstraintLayout>

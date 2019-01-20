@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="empty_view_image">96dp</dimen>
+    <dimen name="empty_view_padding">8dp</dimen>
+    <dimen name="floating_button_padding">16dp</dimen>
+    <dimen name="add_image">24dp</dimen>
+    <dimen name="top_margins">36dp</dimen>
+    <dimen name="big_image">50dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="divider">8dp</dimen>
+
+    <dimen name="guideline1">8dp</dimen>
+    <dimen name="guideline2">70dp</dimen>
+    <dimen name="guideline3">132dp</dimen>
+    <dimen name="guideline4">194dp</dimen>
+    <dimen name="guideline5">256dp</dimen>
+
+    <dimen name="text_large">22sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+
+    <dimen name="text_details_large">36sp</dimen>
+    <dimen name="text_details_medium">26sp</dimen>
+    <dimen name="text_details_small">17sp</dimen>
+</resources>

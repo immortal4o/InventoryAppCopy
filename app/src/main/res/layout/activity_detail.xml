@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/detail_book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_details_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Star Wars" />
+
+    <TextView
+        android:id="@+id/detail_book_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_details_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_name"
+        tools:text="9.99" />
+
+    <TextView
+        android:id="@+id/detail_book_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_details_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_price"
+        tools:text="999" />
+
+    <ImageView
+        android:id="@+id/detail_button_plus"
+        android:layout_width="@dimen/add_image"
+        android:layout_height="@dimen/add_image"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        app:layout_constraintEnd_toStartOf="@+id/detail_book_quantity"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_price"
+        app:srcCompat="@drawable/add_a_notebook" />
+
+    <ImageView
+        android:id="@+id/detail_button_minus"
+        android:layout_width="@dimen/add_image"
+        android:layout_height="@dimen/add_image"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/detail_book_quantity"
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_price"
+        app:srcCompat="@drawable/notebook_minus" />
+
+    <TextView
+        android:id="@+id/detail_supplier_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/top_margins"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_details_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_book_quantity"
+        tools:text="Darth Vader" />
+
+    <TextView
+        android:id="@+id/detail_supplier_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/empty_view_padding"
+        android:layout_marginLeft="@dimen/empty_view_padding"
+        android:layout_marginRight="@dimen/empty_view_padding"
+        android:layout_marginStart="@dimen/empty_view_padding"
+        android:layout_marginTop="@dimen/floating_button_padding"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_details_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_supplier_name"
+        tools:text="00359 899 123 456" />
+
+</android.support.constraint.ConstraintLayout>
